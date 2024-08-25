@@ -9,7 +9,7 @@ export default function Home() {
       <StatusExmpl status={Status.Active}>Active</StatusExmpl>
       <div>
         <StatusWithClxs status={Status.NotActive} disabled>
-          Not Active
+          Disabled
         </StatusWithClxs>
         <StatusWithClxs status={Status.Active}>Active</StatusWithClxs>
       </div>
