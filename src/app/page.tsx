@@ -1,8 +1,9 @@
-import StatusExmpl, { Status } from './components/statusExmpl';
-import StatusWithClxs from './components/statusWithClxs';
+import ButtonExmp from './ui/buttonExmp';
+import StatusExmpl, { Status } from './ui/statusExmpl';
+import StatusWithClxs from './ui/statusWithClxs';
 export default function Home() {
   return (
-    <main>
+    <main className="flex min-h-screen flex-col p-6">
       <h1>Home Page</h1>
       <p className="text-xl">Welcome to the home page.</p>
       <StatusExmpl status={Status.NotActive}>Not Active</StatusExmpl>
@@ -13,6 +14,7 @@ export default function Home() {
         </StatusWithClxs>
         <StatusWithClxs status={Status.Active}>Active</StatusWithClxs>
       </div>
+      <ButtonExmp disabled>Click me</ButtonExmp>
     </main>
   );
 }
