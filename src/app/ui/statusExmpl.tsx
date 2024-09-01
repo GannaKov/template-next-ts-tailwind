@@ -12,11 +12,11 @@ export interface StatusExmplProps {
 const StatusExmpl = ({ children, status }: StatusExmplProps) => {
   return (
     <div
-      className={`inline-flex w-40 items-center py-2 px-5 rounded-3xl text-sm font-medium border ${
+      className={`inline-flex w-40 items-center rounded-3xl border px-5 py-2 text-sm font-medium ${
         (status === Status.NotActive &&
-          'text-zinc-700 bg-neutral-50 border-zinc-700') ||
+          'border-zinc-700 bg-neutral-50 text-zinc-700') ||
         (status === Status.Active &&
-          'text-green-700 bg-green-100 border-green-700') ||
+          'border-green-700 bg-green-100 text-green-700') ||
         ''
       }`}
     >
